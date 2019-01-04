@@ -8,6 +8,6 @@ App to search for gifs using the Giphy API
 - [x] Comment work
 
 ## What needs doing
-- [ ] A search history with local storage
+- [ ] A search history using local storage
 - [ ] Change it so random gif is done through API
 - [ ] Append all gifs to body (maybe)
