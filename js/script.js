@@ -23,9 +23,9 @@ form.addEventListener('submit', (e) => {
          // Random image taken from data array
          const randomImg = Math.floor(Math.random() * data.data.length);
          // Set image source to random image
-         returnedImg.setAttribute('src', data.data[randomImg].images.downsized.url)
+         returnedImg.setAttribute('src', data.data[randomImg].images.downsized.url);
          // Set the alt of the image
-         returnedImg.setAttribute('alt', data.data[randomImg].title)
+         returnedImg.setAttribute('alt', data.data[randomImg].title);
       });
    // Reset form input
    form.reset();
