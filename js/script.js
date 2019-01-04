@@ -21,8 +21,10 @@ form.addEventListener('submit', (e) => {
    fetch(url)
       .then(res => res.json())
       .then(data => {
+         // Random image taken from data array
          const randomImg = Math.floor(Math.random() * data.data.length);
 
+         // Set image source to random image
          returnedImg.setAttribute('src', data.data[randomImg].images.downsized.url);
       });
    // Reset form input
