@@ -8,7 +8,7 @@ form.addEventListener('submit', (e) => {
    const inputSearch = document.querySelector('#user-search').value;
    // URL structure
    const giphy = {
-      api: 'http://api.giphy.com/v1/gifs/search?',
+      api: 'https://api.giphy.com/v1/gifs/search?',
       apiKey: '&api_key=KvlI7qrbEwAVr36bcLHvtPTSMZItjtnu',
       search: `&q=${inputSearch}`
    }
