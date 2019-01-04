@@ -73,4 +73,12 @@ section#section-search {
    }
 }
 
+section#images {
+   margin-top: 2em;
+
+   img {
+      width: 100%;
+   }
+}
+
 @import 'media-queries';

@@ -85,6 +85,14 @@ section#section-search form input[type=submit]:hover {
   background: #0073ee;
 }
 
+section#images {
+  margin-top: 2em;
+}
+
+section#images img {
+  width: 100%;
+}
+
 @media (max-width: 35em) {
   header#header-branding h1 {
     font-size: 2.75rem;
