@@ -87,7 +87,8 @@ section#section-search form input[type=submit]:hover {
 
 @media (max-width: 35em) {
   header#header-branding h1 {
-    font-size: 3rem;
+    font-size: 2.75rem;
+    line-height: 1.5;
   }
   section#section-search form {
     -webkit-box-align: initial;
