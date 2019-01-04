@@ -1,7 +1,5 @@
 const form = document.querySelector('form');
 const returnedImg = document.querySelector('#image');
-const searchBtn = document.querySelector('#search-btn')
-
 
 // Prevent page from reloading
 form.addEventListener('submit', (e) => {
