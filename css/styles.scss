@@ -41,7 +41,7 @@ section#section-search {
       width: 100%;
 
       input[type=text],
-      input[type=submit] {
+      button#search-btn {
          border: 0;
          color: #333;
          padding: .85em 1em;
@@ -56,7 +56,7 @@ section#section-search {
          transition: background 300ms ease;
       }
 
-      input[type=submit] {
+      button#search-btn {
          background: $clr-headingBlue;
          border-top-right-radius: 5px;
          border-bottom-right-radius: 5px;

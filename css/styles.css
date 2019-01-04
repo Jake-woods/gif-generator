@@ -51,7 +51,7 @@ section#section-search form {
 }
 
 section#section-search form input[type=text],
-section#section-search form input[type=submit] {
+section#section-search form button#search-btn {
   border: 0;
   color: #333;
   padding: .85em 1em;
@@ -68,7 +68,7 @@ section#section-search form input[type=text] {
   transition: background 300ms ease;
 }
 
-section#section-search form input[type=submit] {
+section#section-search form button#search-btn {
   background: #228DFF;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -81,7 +81,7 @@ section#section-search form input[type=submit] {
   transition: background 300ms ease;
 }
 
-section#section-search form input[type=submit]:hover {
+section#section-search form button#search-btn:hover {
   background: #0073ee;
 }
 
@@ -95,17 +95,21 @@ section#images img {
 
 @media (max-width: 35em) {
   header#header-branding h1 {
-    font-size: 2.75rem;
+    background: #228DFF;
+    border-bottom: 4px solid #002955;
+    color: #002955;
+    text-shadow: none;
+    font-size: 2rem;
     line-height: 1.5;
+    margin: 0;
+    padding: .5em;
+    white-space: nowrap;
   }
-  section#section-search form {
-    -webkit-box-align: initial;
-        -ms-flex-align: initial;
-            align-items: initial;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+  section#section-search {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    overflow: hidden;
   }
   section#section-search form input[type=text] {
     border-radius: 0;
@@ -113,10 +117,16 @@ section#images img {
         flex-basis: 100%;
     text-align: center;
   }
-  section#section-search form input[type=submit] {
+  section#section-search form button#search-btn {
     border-radius: 0;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
+  }
+  section#images {
+    margin: 0;
+  }
+  section#images img {
+    height: 20em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
