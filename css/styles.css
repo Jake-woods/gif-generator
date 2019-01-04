@@ -1,0 +1,113 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  background: #f3f3f3;
+  background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0/15px 15px;
+  font-family: 'Staatliches';
+}
+
+.container {
+  max-width: 35em;
+  margin: 0 auto;
+  padding: .75em;
+}
+
+header#header-branding {
+  margin-top: 5em;
+  text-align: center;
+}
+
+header#header-branding h1 {
+  color: #228DFF;
+  font-size: 3.75rem;
+  letter-spacing: .25em;
+  padding: 0;
+  text-shadow: 8px 8px #002955;
+}
+
+section#section-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#section-search form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 1px 1px 10px rgba(143, 143, 143, 0.11);
+          box-shadow: 1px 1px 10px rgba(143, 143, 143, 0.11);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+section#section-search form input[type=text],
+section#section-search form input[type=submit] {
+  border: 0;
+  color: #333;
+  padding: .85em 1em;
+}
+
+section#section-search form input[type=text] {
+  background-color: #6fb4ff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  letter-spacing: .125em;
+  -webkit-transition: background 300ms ease;
+  transition: background 300ms ease;
+}
+
+section#section-search form input[type=submit] {
+  background: #228DFF;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #002955;
+  cursor: pointer;
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  letter-spacing: .125em;
+  -webkit-transition: background 300ms ease;
+  transition: background 300ms ease;
+}
+
+section#section-search form input[type=submit]:hover {
+  background: #0073ee;
+}
+
+@media (max-width: 35em) {
+  header#header-branding h1 {
+    font-size: 3rem;
+  }
+  section#section-search form {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  section#section-search form input[type=text] {
+    border-radius: 0;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+  }
+  section#section-search form input[type=submit] {
+    border-radius: 0;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

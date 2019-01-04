@@ -1,0 +1,76 @@
+$clr-headingBlue: #228DFF;
+
+* {
+   box-sizing: border-box;
+   font-family: inherit;
+}
+
+body {
+   background: #f3f3f3;
+   background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+   font-family: 'Staatliches';
+}
+
+.container {
+   max-width: 35em;
+   margin: 0 auto;
+   padding: .75em;
+}
+
+header#header-branding {
+   margin-top: 5em;
+   text-align: center;
+
+   h1 {
+      color: $clr-headingBlue;
+      font-size: 3.75rem;
+      letter-spacing: .25em;
+      padding: 0;
+      text-shadow: 8px 8px darken($clr-headingBlue, 40);
+   }
+}
+
+section#section-search {
+   display: flex;
+   justify-content: center;
+
+   form {
+      align-items: center;
+      box-shadow: 1px 1px 10px rgba(143, 143, 143, 0.11);
+      display: flex;
+      width: 100%;
+
+      input[type=text],
+      input[type=submit] {
+         border: 0;
+         color: #333;
+         padding: .85em 1em;
+      }
+
+      input[type=text] {
+         background-color: lighten($clr-headingBlue, 15);
+         border-top-left-radius: 5px;
+         border-bottom-left-radius: 5px;
+         flex-basis: 90%;
+         letter-spacing: .125em;
+         transition: background 300ms ease;
+      }
+
+      input[type=submit] {
+         background: $clr-headingBlue;
+         border-top-right-radius: 5px;
+         border-bottom-right-radius: 5px;
+         color: #002955;
+         cursor: pointer;
+         flex-basis: 10%;
+         letter-spacing: .125em;
+         transition: background 300ms ease;
+
+         &:hover {
+            background: darken($clr-headingBlue, 10);
+         }
+      }
+   }
+}
+
+@import 'media-queries';
